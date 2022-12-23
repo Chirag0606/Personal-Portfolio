@@ -12,9 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* a{
-    text-decoration: none;
-} */
 .container {
     min-height: 100vh;
     width: 100%;
@@ -36,15 +33,6 @@ p {
     line-height: 2.5rem;
     letter-spacing: .05rem;
 }
-
-/* .section-title {
-    font-size: 4rem;
-    color: crimson;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-} */
 
 .brand h1 {
     font-size: 3rem;
@@ -328,23 +316,6 @@ p {
     }
 }
 
-/* #hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-#hero .cta:hover{
-    color: white;
-    background-color: crimson;
-} */
 /* end of main section */
 
 /* about me */
@@ -547,7 +518,8 @@ p {
     left: 0;
     top: 45px;
     z-index: -1;
-    box-shadow: 0px 0px 20px 0px rgb(31, 30, 30);;
+    box-shadow: 0px 0px 20px 0px rgb(31, 30, 30);
+    ;
 }
 
 #Achievements .item:nth-child(odd)::after {
@@ -633,10 +605,10 @@ p {
 #projects .item .right {
     flex: 1;
     margin-left: -80px;
-    background-color: var(--body-bg);
+    background-color: white;
     padding: 2rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgb(31, 30, 30);;
+    box-shadow: 0 0 20px rgb(31, 30, 30);
     z-index: 2;
 }
 
@@ -652,7 +624,8 @@ p {
     height: 150px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px rgb(31, 30, 30);;
+    box-shadow: 0px 0px 20px rgb(31, 30, 30);
+    ;
 }
 
 #projects .item .left .img img {
@@ -686,84 +659,175 @@ p {
 /* end of projects */
 
 /* contact */
+
+#contact {
+    padding: 10rem 0;
+}
+
 #contact .contact {
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-#contact .contact-items {
-    width: 400px;
-    justify-content: space-evenly;
-}
-
-#contact .contact-item {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
+#contact .wrapper {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+    gap: 5rem;
+}
+
+#contact .wrapper .left,
+#contact .wrapper .right {
+    flex: 1;
+}
+
+#contact .left .contact-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#contact .left .contact-info {
+    margin-bottom: 5rem;
+}
+
+#contact .left .contact-info ul {
+    list-style: none;
+}
+
+#contact .left .contact-info ul li {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#contact .left .contact-info ul li a {
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 18px 0px;
-}
-
-#contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-#contact .contact-info h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-#contact .contact-info h2 {
+    justify-content: flex-start;
     font-size: 2rem;
-    line-height: 2rem;
-    font-weight: 500;
+    padding: 1.5rem;
+    gap: 1rem;
 }
 
-@media only screen and (min-width:950px) {
-    #contact .contact {
-        flex-direction: column;
-        padding: 100px 0;
-        align-items: center;
+#contact .left .contact-info ul li:hover {
+    background-color: #29323c;
+}
+
+#contact .left .contact-info ul li:hover a {
+    color: crimson;
+}
+
+#contact .left .contact-info ul li:hover a .icon {
+    color: crimson;
+}
+
+#contact .left .contact-info ul li a .icon {
+    width: 25px;
+    color: #29323c;
+}
+
+#contact .left .social-info ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+#contact .left .social-info ul li {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#contact .right .form-wrapper {
+    background-color: #29323c;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 12px;
+    color: crimson;
+}
+
+#contact .right .form-group {
+    margin-bottom: 1rem;
+}
+
+#contact .right .form-group label {
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+#contact .right .form-group .input-wrapper {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#contact .right .form-group .input-wrapper .icon {
+    font-size: 3rem;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 218, 218);
+}
+
+#contact .right .form-group .input-wrapper input {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+
+#contact .right .form-group textarea {
+    width: 100%;
+    height: 250px;
+    resize: vertical;
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+#contact .right .form-wrapper button {
+    display: inline-block;
+    width: 150px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height: auto;
+    padding: 1rem 0;
+    font-family: 'Roboto Mono';
+    letter-spacing: .3rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact .wrapper {
+        flex-direction: column-reverse;
         justify-content: center;
-        min-width: 20vh;
+        align-items: center;
     }
 
-    #contact .contact-items {
+    #contact .right {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        margin: 0;
     }
 
-    #contact .contact-item {
-        margin: 20px;
-        flex-direction: row;
-    }
-
-    #contact .contact-item .icon {
-        height: 100px;
-        width: 100px;
-    }
-
-    #contact .contact-item .icon .img {
-        object-fit: contain;
-    }
-
-    #contact .contact-item .contact-info {
+    #contact .right .form-wrapper {
+        padding: 3rem;
         width: 100%;
-        text-align: left;
-        padding-left: 20px;
+        max-width: 100%;
     }
 }
 
