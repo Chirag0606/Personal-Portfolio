@@ -26,7 +26,7 @@
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#about" data-after="About">About</a></li>
                         <li><a href="#skills" data-after="Skills">Skills</a></li>
-                        <li><a href="#achivements" data-after="achivements">achivements</a></li>
+                        <li><a href="#Achievements" data-after="Achievements">Achievements</a></li>
                         <li><a href="#projects" data-after="Projects">Projects</a></li>
                         <li><a href="#contact" data-after="Contact">Contact</a></li>
                     </ul>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="col-right">
-                <h1 class="section-title">ABOUT ME</h1>
+                <h1 class="section-heading" data-outline="ABOUT ME">ABOUT ME</h1>
                 <h2>Student | Front End Developer | Gamer</h2>
                 <p>I am a second year student pursuing Computer Science and Engineering @ SRM KTR campus. Obsess with
                     learning new things in the field of computer science. I'm Frontend Developer and currently exploring
@@ -73,7 +73,7 @@
     <section id="skills">
         <div class="skills container">
             <div class="skills-top">
-                <h1 class="section-title">SKILLS</h1>
+                <h1 class="section-heading" data-outline="skills">SKILLS</h1>
                 <p>"The purpose of education is to make good human beings with skill and expertise... Enlightened human
                     beings can be created by teachers."</p>
                 <p>-A. P. J. Abdul Kalam</p>
@@ -88,7 +88,7 @@
                     <h2>C++</h2>
                 </div>
                 <div class="skills-item">
-                    <div class="icon"><img src="https://img.icons8.com/fluency/48/null/python.png"/></div>
+                    <div class="icon"><img src="https://img.icons8.com/fluency/48/null/python.png" /></div>
                     <h2>Python</h2>
                 </div>
                 <div class="skills-item">
@@ -100,7 +100,7 @@
                     <h2>CSS</h2>
                 </div>
                 <div class="skills-item">
-                    <div class="icon"><img src="https://img.icons8.com/fluency/48/null/video-editing.png"/></div>
+                    <div class="icon"><img src="https://img.icons8.com/fluency/48/null/video-editing.png" /></div>
                     <h2>Video Editing</h2>
                 </div>
             </div>
@@ -108,53 +108,81 @@
     </section>
     <!-- end of skills -->
 
-    <!-- achivements -->
-    <section id="achivements">
-        <div class="achivements container">
+    <!-- Achievements section -->
+    <section id="Achievements">
+        <div class="Achievements container">
+            <div class="section-heading">
+                <h1 class="section-heading" data-outline="Achievements">Achievements</h1>
+            </div>
+            <div class="all-items">
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/achievement.jpg" alt="img">
+                    </div>
+                    <!-- <h3 class="Achievements-heading">Tailor</h3> -->
+                    <!-- <p class="Achievements-subheading">Lorem, ipsum dolor.</p> -->
+                    <p class="Achievements">Python certificate from Kaggle</p>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/achievement.jpg" alt="img">
+                    </div>
+                    <!-- <h3 class="Achievements-heading">Tailor</h3> -->
+                    <!-- <p class="Achievements-subheading">Lorem, ipsum dolor.</p> -->
+                    <p class="Achievements">3 star in Python on Hackerrank</p>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./images/achievement.jpg" alt="img">
+                    </div>
+                    <!-- <h3 class="Achievements-heading">Tailor</h3> -->
+                    <!-- <p class="Achievements-subheading">Lorem, ipsum dolor.</p> -->
+                    <p class="Achievements">4 star in C on Hackerrank</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- end of achivements -->
+    <!-- end of Achievement section -->
 
-    <!-- projects section -->
+    <!-- Project sections -->
     <section id="projects">
         <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">PROJECTS</h1>
-            </div>
-            <div class="all-projects">
-                <div class="projects-item">
-                    <div class="projects-info">
-                        <h1>Project 1</h1>
-                        <h2>Calculator-C</h2>
-                        <p>In this project i used C programming language. Main motive of this project was to understand
-                            the files concepts in C language. I made a calculator such that i can see all of my history
-                            of calulations which i did several weeks back.</p>
+            <h2 class="section-heading" data-outline="Projects">Projects</h2>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="./images/website.png" alt="img">
+                        </div>
                     </div>
-                    <div class="projects-img">
-                        <img src="./images/calculatorillustration.jpg" alt="img">
+                    <div class="right">
+                        <h2 class="project-title">Portfolio website</h2>
+                        <!-- <h3 class="project-sub-title">Lorem ipsum dolor sit.</h3> -->
+                        <p class="project-disc">Personal portfolio website using HTML, CSS and JavaScript.</p>
                     </div>
                 </div>
-                <div class="projects-item">
-                    <div class="projects-info">
-                        <h1>Project 2</h1>
-                        <h2>Portfolio Website</h2>
-                        <p>In this project i created my own one page Portfolio Website. I used only HTML, CSS and
-                            JavaScript concepts. </p>
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="./images/calculatorillustration.jpg" alt="img">
+                        </div>
                     </div>
-                    <div class="projects-img">
-                        <img src="./images/website.png" alt="img">
+                    <div class="right">
+                        <h2 class="project-title">Calculator</h2>
+                        <!-- <h3 class="project-sub-title">Lorem ipsum dolor sit.</h3> -->
+                        <p class="project-disc">A simple web calculator using HTML, CSS and JavaScript.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end of project section -->
+    <!-- end of Project sections -->
 
     <!-- contact section -->
     <section id="contact">
         <div class="contact container">
             <div>
-                <h1 class="section-title">CONTACT INFO</h1>
+                <h1 class="section-heading" data-outline="contact me">CONTACT ME</h1>
             </div>
             <div>
                 <div class="contact-item">
