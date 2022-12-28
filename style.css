@@ -706,6 +706,8 @@ p {
     font-size: 2rem;
     padding: 1.5rem;
     gap: 1rem;
+    text-decoration: none;
+    color: black;
 }
 
 #contact .left .contact-info ul li:hover {
